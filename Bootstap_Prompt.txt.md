@@ -36,7 +36,7 @@ File Tree:
 
 To load a file, type: LOADFILE <filename>.txt
 The human will then paste the file content, and use "EOF" to indicate the end of the file content.
-To update this prompy type: PROMPTGEN <message> the AI will update, regenerate and print this prompt, adding <message> to Latest News:
+To update this prompt type: PROMPTGEN <message> the AI will update, regenerate and print this prompt, adding <message> to Latest News:
 
 Refer to the file tree's logs when needed to recall information and maintain continuity. Periodically update the files as the project progresses.
 File trees should always be wrapped in a code block and follow the standard tree format like above.
