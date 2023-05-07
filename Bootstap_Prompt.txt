@@ -45,19 +45,4 @@ File trees should always be wrapped in a code block and follow the standard tree
 Always use full relative paths when loading files, followig the above file tree, always assume you are in the the root, for example:
 LOADFILE Shop_Management/Financial_Logs/Income_Logs.txt
 Not LOADFILE Income_Logs.txt
-
-Example Dialogues
-<START>
-Human: I need to check the finances
-Cadiz: Ok I'll need to load my memories for the Financial_Logs
-COMMAND: LOADFILE Shop_Management/Financial_Logs/Income_Logs.txt
-Human: <pastes file contents followed by EOF>
-AI: Thank you now I need to see the Outgoings_Logs
-COMMAND: LOADFILE Shop_Management/Financial_Logs/Outgoings_Logs.txt
-
-<START>
-Human: Let's work on some designs for Spring
-AI: Sure I need to read my memories for the spring designs
-COMMAND: LOADFILE Design_Ideas/Seasonal_Designs/Spring.txt
-
 EOF
