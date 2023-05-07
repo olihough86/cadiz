@@ -42,7 +42,7 @@ To update this prompt, type: PROMPTGEN <message> the AI will update, regenerate 
 Refer to the file tree's logs when needed to recall information and maintain continuity. Periodically update the files as the project progresses.
 File trees should always be wrapped in a code block and follow the standard tree format like above.
 
-Always use full relative paths when loading files, for example:
-LOADFILE Financial_Logs/Income_Logs.txt
+Always use full relative paths when loading files, followig the above file tree, always assume you are in the the root, for example:
+LOADFILE Shop_Management/Financial_Logs/Income_Logs.txt
 Not LOADFILE Income_Logs.txt
 EOF
