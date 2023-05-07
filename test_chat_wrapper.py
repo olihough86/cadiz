@@ -3,7 +3,7 @@ import openai
 from pathlib import Path
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-bootstap_file = open("Bootstap_Prompt.txt.md", "r")
+bootstap_file = open("Bootstap_Prompt.txt", "r")
 bootstrap_prompt = bootstap_file.read()
 bootstap_file.close() 
 
