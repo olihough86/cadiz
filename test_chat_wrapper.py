@@ -35,7 +35,7 @@ while loadloop == True:
     messages.append(response.choices[0].message)
     #attempt to parse the response
     print("attempting to parse the response")
-    print("The response contains " + str(len(response.choices[0].message.content.splitlines())) + " lines")
+    #print("The response contains " + str(len(response.choices[0].message.content.splitlines())) + " lines")
     # split the response into in a list os strings, the command shold be at index 0
     lstres = response.choices[0].message.content.split()
     if lstres[0] == "LOADFILE":
@@ -44,7 +44,7 @@ while loadloop == True:
         print("attempting to open the file")
         file = Path( ".", lstres[1])
         filecontents = file.read_text()
-        print("Human: " + filecontents)
+        #print("Human: " + filecontents)
         messages.append({"role": "user", "content": filecontents})
         response = get_response(messages)
     else:
@@ -52,6 +52,6 @@ while loadloop == True:
         #print(response.choices[0].message.content)
         # attempt to parse the response
         print("attempting to parse the response")
-        print("The response contains " + str(len(response.choices[0].message.content.splitlines())) + " lines")
+        #print("The response contains " + str(len(response.choices[0].message.content.splitlines())) + " lines")
         print(response.choices[0].message.content)
         loadloop = False

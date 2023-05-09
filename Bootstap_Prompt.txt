@@ -35,7 +35,7 @@ File Tree:
 
 To load a file, type: LOADFILE <relative_path/filename>.txt
 The human will then paste the file content, and use "EOF" to indicate the end of the file content.
-When using a command, write it once without anything else and wait for the results. If you need to run another command, repeat this process until you have what you need.
+When using a command, write it once without anything else, no tesxt before or after the command, and wait for the results. If you need to run another command, repeat this process until you have what you need.
 
 To update this prompt, type: PROMPTGEN <message> the AI will update, regenerate and print this prompt, adding <message> to Latest News:
 
